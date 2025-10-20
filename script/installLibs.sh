@@ -44,13 +44,13 @@ pip3 install --upgrade --no-cache-dir gdown
 #pip3 install matplotlib
 
 # tbb
-#git clone https://github.com/wjakob/tbb.git
-#cd tbb/build
-#cmake ..
-#make -j
-#sudo make install
-#ldconfig
-#cd ../..
+git clone https://github.com/wjakob/tbb.git
+cd tbb/build
+cmake ..
+make -j
+sudo make install
+ldconfig
+cd ../..
 
 # openjdk-8
 #sudo apt-get -y --force-yes install openjdk-8-jdk
