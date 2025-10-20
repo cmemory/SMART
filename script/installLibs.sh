@@ -29,31 +29,31 @@ sudo apt-get -y --force-yes install libboost-all-dev
 cd ..
 
 # paramiko
-sudo apt-get -y --force-yes install python3-pip
-pip3 install --upgrade pip
-pip3 install paramiko
+#sudo apt-get -y --force-yes install python3-pip
+#pip3 install --upgrade pip
+#pip3 install paramiko
 
 # gdown
 pip3 install gdown
 pip3 install --upgrade --no-cache-dir gdown
 
 # func_timeout
-pip3 install func_timeout
+#pip3 install func_timeout
 
 # matplotlib
-pip3 install matplotlib
+#pip3 install matplotlib
 
 # tbb
-git clone https://github.com/wjakob/tbb.git
-cd tbb/build
-cmake ..
-make -j
-sudo make install
-ldconfig
-cd ../..
+#git clone https://github.com/wjakob/tbb.git
+#cd tbb/build
+#cmake ..
+#make -j
+#sudo make install
+#ldconfig
+#cd ../..
 
 # openjdk-8
-sudo apt-get -y --force-yes install openjdk-8-jdk
+#sudo apt-get -y --force-yes install openjdk-8-jdk
 
 cd ..
 rm -rf tmp
