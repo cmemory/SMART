@@ -30,7 +30,7 @@ DSM *dsm;
 
 inline Key to_key(uint64_t k) {
     // kKeySpace 表示key的范围是 0~64*1024*1024.
-  return (CityHash64((char *)&k, sizeof(k)) + 1) % kKeySpace;
+  return int2key((CityHash64((char *)&k, sizeof(k)) + 1) % kKeySpace);
 }
 
 void parse_args(int argc, char *argv[]) {
